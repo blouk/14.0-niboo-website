@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="menu_no_context" model="website.menu">
+        <field name="name">No Context</field>
+        <field name="url">/no_context</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">11</field>
+    </record>
+
+    <record id="menu_odoo_context" model="website.menu">
+        <field name="name">Odoo's Context</field>
+        <field name="url">/odoo_context</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">12</field>
+    </record>
+
+
+</odoo>
