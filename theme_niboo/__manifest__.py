@@ -18,6 +18,7 @@
         "views/pages/no_context.xml",
         "views/pages/odoo_context.xml",
         "views/pages/message.xml",
+        "views/pages/qweb_logic.xml",
         # Snippets
     ],
 }
