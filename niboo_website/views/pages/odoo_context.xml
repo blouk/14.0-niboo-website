@@ -24,6 +24,6 @@
             <field name="website_published">True</field>
             <field name="url">/odoo_context</field>
             <field name="name">Niboo Odoo's Context</field>
-            <field name="view_id" ref="niboo_website.odoo_context"/>
+            <field name="view_id" ref="niboo_website.odoo_context"/> 
           </record>
         </odoo>
