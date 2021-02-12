@@ -21,6 +21,8 @@
         #Backend
 
         #Pages
+        'views/pages/no_context.xml',
+        'views/pages/odoo_context.xml',
 
         #Snippets
 
