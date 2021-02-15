@@ -76,4 +76,16 @@
                  data-img="/theme_niboo/static/src/img/snippets/header_template_niboo.png"/>
     </xpath>
   </template>
+
+  <template id="pre_footer" inherit_id="website.layout" customize_show="True" name="Pre-footer">
+      <xpath expr="//div[@id='footer']" position="before">
+      <div class="container niboo-prefooter">
+        <div class="row">
+        <div class="col-12">
+          <h3>Pre-footer</h3>
+        </div>
+      </div>
+      </div>
+      </xpath>
+  </template>
 </odoo>

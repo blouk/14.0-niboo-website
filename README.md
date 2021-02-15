@@ -5,6 +5,9 @@
 -- Odoo documentation:
 https://www.odoo.com/documentation/13.0/
 
+-- Odoo Javascript references
+https://www.odoo.com/documentation/master/reference/javascript_reference.html
+
 -- Qweb languag réf.
 https://www.odoo.com/documentation/13.0/reference/qweb.html
 

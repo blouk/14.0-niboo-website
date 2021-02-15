@@ -3,6 +3,7 @@
   position:relative;
   h1 {
     color: white;
+
   }
   #top_menu_container {
     z-index:2;
@@ -20,4 +21,19 @@
     background-size: cover;
     opacity: .3;
   }
+}
+
+.niboo-text-headline {
+    @include text-3d(2);
+    font-size: 5em;
+    font-family: 'Lato';
+    font-weight: Bold;
+}
+
+.niboo-prefooter {
+  background: $primary;
+  color:white;
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+  border-radius: 5px;
 }
