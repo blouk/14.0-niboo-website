@@ -3,9 +3,9 @@
     <record id="no_context" model="ir.ui.view">
         <field name="name">No Context Page</field>
         <field name="type">qweb</field>
-        <field name="key">niboo_website.no_context</field>
+        <field name="key">theme_niboo.no_context</field>
         <field name="arch" type="xml">
-            <t name="No Context Page" t-name="niboo_website.no_context">
+            <t name="No Context Page" t-name="theme_niboo.no_context">
               <html lang="en">
               <head>
                 <meta charset="utf-8"/>
@@ -22,10 +22,11 @@
         </t>
         </field>
     </record>
+
     <record id="niboo_no_context" model="website.page">
         <field name="website_published">True</field>
         <field name="url">/no_context</field>
         <field name="name">Niboo No Context</field>
-        <field name="view_id" ref="niboo_website.no_context"/>
+        <field name="view_id" ref="theme_niboo.no_context"/>
     </record>
 </odoo>

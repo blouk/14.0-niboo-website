@@ -14,4 +14,4 @@ class Website(http.Controller):
         message = "Write your message here!"
         if "message" in post:
             message = post["message"]
-        return request.render("niboo_website.message", {"message": message})
+        return request.render("theme_niboo.message", {"message": message})

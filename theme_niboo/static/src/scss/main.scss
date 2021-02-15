@@ -1,0 +1,23 @@
+.niboo-navbar {
+  min-height: 150px;
+  position:relative;
+  h1 {
+    color: white;
+  }
+  #top_menu_container {
+    z-index:2;
+  }
+  .niboo-background {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    z-index:0;
+    background-image: url('/theme_niboo/static/src/img/background_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .3;
+  }
+}

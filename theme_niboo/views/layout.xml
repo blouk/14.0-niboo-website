@@ -1,4 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+  <!-- layout snippets -->
+  <template id="template_header_custom" inherit_id="website.layout" name="Template Header Custom" active="False">
+      <xpath expr="//header//nav" position="replace">
+        <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light niboo-navbar">
 
+            <div class="niboo-background">
+              <div class="niboo-top w-100">
+                <h1 class="text-center mt16 mb8">Example Header</h1>
+              </div>
+            </div>
+
+                <div id="top_menu_container" class="container flex-row flex-wrap">
+                <!-- Brand -->
+                <t t-call="website.placeholder_header_brand">
+                    <t t-set="_link_class" t-value="'mr-4'"/>
+                </t>
+                <!-- Slogan -->
+                <div class="ml-3 mr-auto">
+                    <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_1"/>
+                </div>
+                <ul class="nav navbar-nav navbar-expand ml-auto order-last order-lg-0">
+                    <!-- Sign In -->
+                    <t t-call="portal.placeholder_user_sign_in">
+                        <t t-set="_item_class" t-value="'nav-item ml-3'"/>
+                        <t t-set="_link_class" t-value="'btn btn-outline-primary'"/>
+                    </t>
+                    <!-- User Dropdown -->
+                    <t t-call="portal.user_dropdown">
+                        <t t-set="_user_name" t-value="True"/>
+                        <t t-set="_user_name_class" t-value="'font-weight-bold'"/>
+                        <t t-set="_item_class" t-value="'nav-item dropdown ml-3'"/>
+                        <t t-set="_link_class" t-value="'nav-link'"/>
+                        <t t-set="_dropdown_menu_class" t-value="'dropdown-menu-right'"/>
+                    </t>
+                    <!-- Button -->
+                    <li class="nav-item">
+                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_2"/>
+                    </li>
+                </ul>
+                <!-- Separator -->
+                <div class="w-100">
+                    <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_3"/>
+                </div>
+                <!-- Navbar Toggler -->
+                <t t-call="website.navbar_toggler"/>
+                <!-- Language Selector -->
+                <t t-call="website.placeholder_header_language_selector">
+                    <t t-set="_div_classes" t-value="'ml-2'"/>
+                </t>
+                 <!-- Navbar Collapse -->
+                <div id="top_menu_collapse" class="collapse navbar-collapse">
+                    <t t-call="website.navbar_nav">
+                        <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                        <!-- Menu -->
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu">
+                                <t t-set="item_class" t-value="'nav-item'"/>
+                                <t t-set="link_class" t-value="'nav-link'"/>
+                            </t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </nav>
+      </xpath>
+  </template>
+
+  <template id="snippet_options" inherit_id="website.snippet_options">
+    <xpath expr="//we-button[@data-name='header_default_opt']" position="before">
+      <we-button title="Niboo"
+                 data-name="niboo_default_opt"
+                 data-customize-website-views="theme_niboo.template_header_custom"
+                 data-customize-website-variable="'custom'"
+                 data-img="/theme_niboo/static/src/img/snippets/header_template_niboo.png"/>
+    </xpath>
+  </template>
 </odoo>

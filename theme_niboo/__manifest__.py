@@ -13,6 +13,7 @@
         # Layout
         "views/layout.xml",
         "views/assets.xml",
+        "views/template_colors.xml",
         # Backend
         # Pages
         "views/pages/no_context.xml",
@@ -20,5 +21,8 @@
         "views/pages/message.xml",
         "views/pages/qweb_logic.xml",
         # Snippets
+        "views/snippets.xml",
+        "views/pages/snippets/s_3d_banner.xml",
+
     ],
 }

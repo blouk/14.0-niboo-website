@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="snippets" inherit_id="website.snippets">
+    <xpath expr="//div[@id='snippet_structure']" position="before">
+      <div id="snippet_structure" class="o_panel">
+          <div class="o_panel_header">Niboo</div>
+          <div class="o_panel_body">
+            <t t-snippet="theme_niboo.s_banner" t-thumbnail="/theme_niboo/static/src/img/snippets/s_3d_banner.svg">
+                <keywords>3d Banner</keywords>
+            </t>
+          </div>
+        </div>
+    </xpath>
+  </template>
+</odoo>

@@ -3,9 +3,9 @@
     <record id="qweb_logic" model="ir.ui.view">
         <field name="name">Qweb Logic Examples</field>
         <field name="type">qweb</field>
-        <field name="key">niboo_website.qweb_logic</field>
+        <field name="key">theme_niboo.qweb_logic</field>
         <field name="arch" type="xml">
-            <t name="Qweb Example" t-name="niboo_website.qweb_logic">
+            <t name="Qweb Example" t-name="theme_niboo.qweb_logic">
                 <t t-call="website.layout">
                     <div id="wrap">
                         <div class="container">
@@ -86,6 +86,6 @@
         <field name="website_published">True</field>
         <field name="url">/qweb_logic</field>
         <field name="name">Qweb Example</field>
-        <field name="view_id" ref="niboo_website.qweb_logic"/>
+        <field name="view_id" ref="theme_niboo.qweb_logic"/>
     </record>
 </odoo>

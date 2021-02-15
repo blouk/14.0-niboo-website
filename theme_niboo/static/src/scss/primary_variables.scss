@@ -1,0 +1,64 @@
+// Theme Palettes
+$o-color-palettes: (
+    (
+        'o-color-1': #ee4980,
+        'o-color-2': #5f5458,
+        'o-color-3': #f7f7f7,
+        'o-color-4': #FFFFFF,
+        'o-color-5': #000000,
+
+        'o-cc5-headings': 'o-color-1',
+
+        'body': 'o-color-3',
+        'footer': 1,
+        'copyright': 3,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (39.06 / 16);
+$o-theme-h3-font-size-multiplier: (31.25 / 16);
+$o-theme-h4-font-size-multiplier: (25.00 / 16);
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+
+$o-theme-font-configs: (
+    'Lato': (
+        'family': ('Lato', sans-serif),
+        'url': 'Lato:300,300i,400,400i,700,700i',
+    ),
+    'Gloria': (
+        'family': ('Gloria Hallelujah', cursive),
+        'url': 'Gloria Hallelujah',
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font-size-base': (14 / 16) * 1rem,
+        'font': 'Gloria',
+        'headings-font': 'Lato',
+        'navbar-font': 'Gloria',
+        'buttons-font': 'Lato',
+
+        'layout': 'boxed',
+        'header-template': 'custom',
+        'hamburger-type': 'off-canvas',
+        'menu-box-shadow': false,
+
+        'footer-template': 'centered',
+
+        'btn-ripple': true,
+        'btn-padding-y-lg': .6rem,
+        'btn-padding-x-lg': 2.2rem,
+        'link-underline': 'always',
+    ),
+);

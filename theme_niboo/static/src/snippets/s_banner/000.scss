@@ -1,0 +1,35 @@
+.s_niboo_banner_wrapper {
+    height: 400px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('/theme_niboo/static/src/img/snippets/background_img_2.jpg');
+
+
+
+
+    img {
+      min-height:400px;
+      position:relative;
+      top:200px;
+    }
+    .s_niboo_3d_banner {
+      position: relative;
+
+    }
+
+    &.normal {
+        height:400px;
+
+    }
+    &.medium{
+      height :600px;
+
+    }
+    &.big{
+        height: 800px;
+
+    }
+}
