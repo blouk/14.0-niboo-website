@@ -13,7 +13,6 @@
         # Layout
         "views/layout.xml",
         "views/assets.xml",
-        # "views/template_colors.xml",
         # Backend
         # Pages
         "views/pages/no_context.xml",
