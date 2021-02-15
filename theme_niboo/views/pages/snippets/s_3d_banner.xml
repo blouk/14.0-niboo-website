@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-<template id="s_banner" name="3d Banner">
+  <template id="s_banner" name="3d Banner">
     <section class="s_niboo_banner_wrapper normal" data-rotation="medium">
-        <div class="s_niboo_3d_banner">
-          <img src="/theme_niboo/static/src/img/snippets/s_banner_background.png" alt="Banner"/>
-        </div>
-    </section>
+      <div class="s_niboo_3d_banner"/>
+  </section>
 </template>
 
 
 <template id="s_banner_options" inherit_id="website.snippet_options">
-    <xpath expr="//div[@data-js='Box']" position="before">
-        <div data-selector=".s_niboo_banner_wrapper" data-js="RotationSpeed">
-          <we-select string="Rotation Speed" data-attribute-name="rotation" data-attribute-default-value="slow">
-            <we-button data-select-data-attribute="fast" data-name="fast">Fast</we-button>
-            <we-button data-select-data-attribute="medium" data-name="medium">Medium</we-button>
-            <we-button data-select-data-attribute="slow" data-name="slow">Slow</we-button>
-          </we-select>
-        </div>
-          <div data-selector=".s_niboo_banner_wrapper">
-          <we-select string="Size">
-            <we-button data-select-class="normal">Normal</we-button>
-            <we-button data-select-class="medium">Medium</we-button>
-            <we-button data-select-class="big">Big</we-button>
-          </we-select>
-
-        </div>
-    </xpath>
+  <xpath expr="//div[@data-js='Box']" position="before">
+    <div data-selector=".s_niboo_banner_wrapper" data-js="RotationSpeed">
+      <we-select string="Rotation Speed" data-attribute-name="rotation" data-attribute-default-value="slow">
+        <we-button data-select-data-attribute="fast" data-name="fast">Fast</we-button>
+        <we-button data-select-data-attribute="medium" data-name="medium">Medium</we-button>
+        <we-button data-select-data-attribute="slow" data-name="slow">Slow</we-button>
+      </we-select>
+    </div>
+    <div data-selector=".s_niboo_banner_wrapper">
+      <we-select string="Size">
+        <we-button data-select-class="normal">Normal</we-button>
+        <we-button data-select-class="medium">Medium</we-button>
+        <we-button data-select-class="big">Big</we-button>
+      </we-select>
+    </div>
+  </xpath>
 </template>
 
 
 <template id="assets_snippet_niboo_s_banner_css_000" inherit_id="website.assets_frontend">
-    <xpath expr="//link[last()]" position="after">
-        <link rel="stylesheet" type="text/scss" href="/theme_niboo/static/src/snippets/s_banner/000.scss"/>
-    </xpath>
-    <xpath expr="//script[last()]" position="after">
-      <!-- coming from https://gist.githubusercontent.com/mrdoob/ -->
-      <script type="text/javascript" src="/theme_niboo/static/src/snippets/s_banner/000.js"/>
-
-    </xpath>
+  <xpath expr="//link[last()]" position="after">
+    <link rel="stylesheet" type="text/scss" href="/theme_niboo/static/src/snippets/s_banner/000.scss"/>
+  </xpath>
+  <xpath expr="//script[last()]" position="after">
+    <!-- coming from https://gist.githubusercontent.com/mrdoob/ -->
+    <script type="text/javascript" src="/theme_niboo/static/src/snippets/s_banner/000.js"/>
+  </xpath>
 </template>
 
 </odoo>

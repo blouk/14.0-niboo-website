@@ -3,25 +3,25 @@
   <record id="menu_no_context" model="website.menu">
     <field name="name">No Context</field>
     <field name="url">/no_context</field>
-    <field name="parent_id" ref="website.main_menu" />
+    <field name="parent_id" ref="website.main_menu"/>
     <field name="sequence" type="int">11</field>
   </record>
   <record id="menu_odoo_context" model="website.menu">
     <field name="name">Odoo's Context</field>
     <field name="url">/odoo_context</field>
-    <field name="parent_id" ref="website.main_menu" />
+    <field name="parent_id" ref="website.main_menu"/>
     <field name="sequence" type="int">12</field>
   </record>
   <record id="menu_message" model="website.menu">
     <field name="name">Message</field>
     <field name="url">/message</field>
-    <field name="parent_id" ref="website.main_menu" />
+    <field name="parent_id" ref="website.main_menu"/>
     <field name="sequence" type="int">13</field>
   </record>
   <record id="menu_qweb_logic" model="website.menu">
     <field name="name">Qweb Logic</field>
     <field name="url">/qweb_logic</field>
-    <field name="parent_id" ref="website.main_menu" />
+    <field name="parent_id" ref="website.main_menu"/>
     <field name="sequence" type="int">14</field>
   </record>
 </odoo>

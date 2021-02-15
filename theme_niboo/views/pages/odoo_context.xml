@@ -11,11 +11,14 @@
             <div class="oe_structure">
               <div class="container">
                 <h1>No Context Page</h1>
-                <p
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod odio et libero accumsan, vel placerat magna mollis. Mauris id tellus blandit libero condimentum luctus ut sed lacus. Aliquam pharetra tincidunt lectus, a feugiat lacus dapibus a. Aliquam erat volutpat. Suspendisse posuere ipsum ligula, vitae vehicula diam vulputate a. Proin vel quam tempus, vulputate erat et, convallis sem. Curabitur pretium efficitur augue, at egestas ex. Donec eget urna diam. Nam lobortis malesuada commodo. Praesent viverra eros et libero vehicula, nec porttitor nisl commodo. Vestibulum ultricies ac mi placerat consectetur. Praesent a molestie tellus. Cras condimentum ex a mauris pharetra tincidunt.
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod odio et libero accumsan, vel placerat magna mollis. Mauris id tellus blandit libero condimentum luctus ut sed lacus. Aliquam pharetra tincidunt lectus, a feugiat lacus
+                  dapibus a. Aliquam erat volutpat. Suspendisse posuere ipsum ligula, vitae vehicula diam vulputate a. Proin vel quam tempus, vulputate erat et, convallis sem. Curabitur pretium efficitur augue, at egestas ex. Donec eget urna diam. Nam lobortis
+                  malesuada commodo. Praesent viverra eros et libero vehicula, nec porttitor nisl commodo. Vestibulum ultricies ac mi placerat consectetur. Praesent a molestie tellus. Cras condimentum ex a mauris pharetra tincidunt.
                 </p>
                 <p>
-                  In odio erat, semper et est sit amet, viverra consectetur nisi. Cras pretium ac dui rutrum sollicitudin. In eu nisi nec leo ultricies laoreet. Nulla pellentesque pharetra volutpat. Phasellus mattis, purus nec congue dignissim, eros enim lacinia felis, sit amet condimentum enim mi quis est. Phasellus sapien lorem, suscipit ut bibendum sed, iaculis sed tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque tortor tellus, vulputate nec aliquam in, porttitor ut dolor. In egestas ex nec convallis convallis. Pellentesque dictum cursus auctor. Etiam rhoncus laoreet lacus in imperdiet.
+                  In odio erat, semper et est sit amet, viverra consectetur nisi. Cras pretium ac dui rutrum sollicitudin. In eu nisi nec leo ultricies laoreet. Nulla pellentesque pharetra volutpat. Phasellus mattis, purus nec congue dignissim, eros enim lacinia
+                  felis, sit amet condimentum enim mi quis est. Phasellus sapien lorem, suscipit ut bibendum sed, iaculis sed tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque tortor tellus, vulputate nec
+                  aliquam in, porttitor ut dolor. In egestas ex nec convallis convallis. Pellentesque dictum cursus auctor. Etiam rhoncus laoreet lacus in imperdiet.
                 </p>
               </div>
             </div>
@@ -28,6 +31,6 @@
     <field name="website_published">True</field>
     <field name="url">/odoo_context</field>
     <field name="name">Niboo Odoo's Context</field>
-    <field name="view_id" ref="theme_niboo.odoo_context" />
+    <field name="view_id" ref="theme_niboo.odoo_context"/>
   </record>
 </odoo>

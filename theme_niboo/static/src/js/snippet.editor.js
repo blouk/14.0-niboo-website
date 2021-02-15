@@ -1,3 +1,5 @@
+/* Not neccessary JS*/
+
 odoo.define('theme_niboo.editor.snippets.options', function (require) {
 'use strict';
   var options = require('web_editor.snippets.options');

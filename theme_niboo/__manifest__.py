@@ -5,7 +5,7 @@
     "summary": "Niboo Website",
     "description": "",
     "version": "14.0",
-    "depends": ["website",],
+    "depends": ["website", ],
     "data": [
         # Data
         "data/website_menu.xml",
@@ -13,7 +13,7 @@
         # Layout
         "views/layout.xml",
         "views/assets.xml",
-        "views/template_colors.xml",
+        # "views/template_colors.xml",
         # Backend
         # Pages
         "views/pages/no_context.xml",

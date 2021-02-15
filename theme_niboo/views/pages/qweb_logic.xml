@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="qweb_logic" model="ir.ui.view">
-        <field name="name">Qweb Logic Examples</field>
-        <field name="type">qweb</field>
-        <field name="key">theme_niboo.qweb_logic</field>
-        <field name="arch" type="xml">
-            <t name="Qweb Example" t-name="theme_niboo.qweb_logic">
-                <t t-call="website.layout">
-                    <div id="wrap">
-                        <div class="container">
-                            <h1>Qweb Logic Examples</h1>
+  <record id="qweb_logic" model="ir.ui.view">
+    <field name="name">Qweb Logic Examples</field>
+    <field name="type">qweb</field>
+    <field name="key">theme_niboo.qweb_logic</field>
+    <field name="arch" type="xml">
+      <t name="Qweb Example" t-name="theme_niboo.qweb_logic">
+        <t t-call="website.layout">
+          <div id="wrap">
+            <div class="container">
+              <h1>Qweb Logic Examples</h1>
 
-                            <h3 class="mt-4">Variables</h3>
-                            <section>
-                                <t t-set="name_of_variable_string" t-value="'value of variable'"/>
-                                <t t-set="name_of_variable_array" t-value="[1,2,3]"/>
-                                <t t-set="name_of_variable_obj" t-value="{'One':1, 'Two':2}"/>
-                                <p>
-                                    <code>&amp;lt;t-raw='name_of_variable_string'/&amp;gt;</code>:
-                                    <t t-raw="name_of_variable_string"/>
-                                </p>
-                                <p>
-                                    <code>&amp;lt;t-raw='name_of_variable_array'/&amp;gt;</code>:
-                                    <t t-raw="name_of_variable_array"/></p>
+              <h3 class="mt-4">Variables</h3>
+              <section>
+                <t t-set="name_of_variable_string" t-value="'value of variable'"/>
+                <t t-set="name_of_variable_array" t-value="[1,2,3]"/>
+                <t t-set="name_of_variable_obj" t-value="{'One':1, 'Two':2}"/>
+                <p>
+                  <code>&amp;lt;t-raw='name_of_variable_string'/&amp;gt;</code>:
+                  <t t-raw="name_of_variable_string"/>
+                </p>
+                <p>
+                  <code>&amp;lt;t-raw='name_of_variable_array'/&amp;gt;</code>:
+                  <t t-raw="name_of_variable_array"/></p>
 
-                                <p>
-                                    <code>&amp;lt;t-raw='name_of_variable_obj'/&amp;gt;</code>:
-                                    <t t-raw="name_of_variable_obj"/></p>
-                            </section>
-                            <h3 class="mt-4">Loop</h3>
-                            <section>
-                                <div>
-                                    <t t-foreach="name_of_variable_array" t-as="var">
-                                        <t t-esc="var"/>
-                                    </t>
-                                </div>
+                <p>
+                  <code>&amp;lt;t-raw='name_of_variable_obj'/&amp;gt;</code>:
+                  <t t-raw="name_of_variable_obj"/></p>
+              </section>
+              <h3 class="mt-4">Loop</h3>
+              <section>
+                <div>
+                  <t t-foreach="name_of_variable_array" t-as="var">
+                    <t t-esc="var"/>
+                  </t>
+                </div>
 
-                                <t t-foreach="name_of_variable_obj" t-as="var">
-                                    <t t-esc="var"/>
-                                    <t t-esc="name_of_variable_obj[var]"/>
-                                </t>
-                            </section>
-                            <h3 class="mt-4">Conditions</h3>
-                            <section>
-                                <t t-raw="lang"/>
-                                <t t-if="lang == 'en_US'">
-                                    <div class="alert alert-warning">English</div>
-                                </t>
-                                <t t-if="lang == 'fr_BE'">
-                                    <div class="alert alert-danger">French</div>
-                                </t>
-                                <!-- https://requests.readthedocs.io/en/master/ available in Qweb -->
-
-                                <t t-if="request.params.get('var')">
-                                    <div class="alert alert-success">Variables
-                                        <code>var</code>
-                                        in the url</div>
-                                </t>
-                                <t t-else="">
-                                    <div class="alert alert-warning">No variable in url</div>
-                                </t>
-                            </section>
-                            <h3 class="mt-4">Data form database</h3>
-                            <section>
-                                <h5>Readable as admin only</h5>
-                                <t t-set="res_partners" t-value="request.env['res.partner'].search([])"/>
-                                
-                                <!-- <t t-set="res_partners" t-value="request.env['res.partner'].sudo().search([])"/> BUT CAREFULL :) -->
-                                <ul>
-                                    <t t-foreach="res_partners" t-as="res_partner">
-                                        <li>
-                                            <span><t t-esc="res_partner.name"/></span>
-                                        </li>
-                                    </t>
-                                </ul>
-                            </section>
-
-                        </div>
-                    </div>
+                <t t-foreach="name_of_variable_obj" t-as="var">
+                  <t t-esc="var"/>
+                  <t t-esc="name_of_variable_obj[var]"/>
                 </t>
-            </t>
-        </field>
-    </record>
-    <record id="ep_dg_comm_qweb_example" model="website.page">
-        <field name="website_published">True</field>
-        <field name="url">/qweb_logic</field>
-        <field name="name">Qweb Example</field>
-        <field name="view_id" ref="theme_niboo.qweb_logic"/>
-    </record>
+              </section>
+              <h3 class="mt-4">Conditions</h3>
+              <section>
+                <t t-raw="lang"/>
+                <t t-if="lang == 'en_US'">
+                  <div class="alert alert-warning">English</div>
+                </t>
+                <t t-if="lang == 'fr_BE'">
+                  <div class="alert alert-danger">French</div>
+                </t>
+                <!-- https://requests.readthedocs.io/en/master/ available in Qweb -->
+
+                <t t-if="request.params.get('var')">
+                  <div class="alert alert-success">Variables
+                    <code>var</code>
+                    in the url</div>
+                </t>
+                <t t-else="">
+                  <div class="alert alert-warning">No variable in url</div>
+                </t>
+              </section>
+              <h3 class="mt-4">Data form database</h3>
+              <section>
+                <h5>Readable as admin only</h5>
+                <t t-set="res_partners" t-value="request.env['res.partner'].search([])"/>
+
+                <!-- <t t-set="res_partners" t-value="request.env['res.partner'].sudo().search([])"/> BUT CAREFULL :) -->
+                <ul>
+                  <t t-foreach="res_partners" t-as="res_partner">
+                    <li>
+                      <span><t t-esc="res_partner.name"/></span>
+                    </li>
+                  </t>
+                </ul>
+              </section>
+
+            </div>
+          </div>
+        </t>
+      </t>
+    </field>
+  </record>
+  <record id="ep_dg_comm_qweb_example" model="website.page">
+    <field name="website_published">True</field>
+    <field name="url">/qweb_logic</field>
+    <field name="name">Qweb Example</field>
+    <field name="view_id" ref="theme_niboo.qweb_logic"/>
+  </record>
 </odoo>
