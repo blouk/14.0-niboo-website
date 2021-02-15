@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="homepage" model="ir.ui.view">
+        <field name="name">Home</field>
+        <field name="type">qweb</field>
+        <field name="inherit_id" ref="website.homepage"/>
+        <field name="key">theme_niboo.homepage</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="niboo-text-headline">A title</h1>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="home_page" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/</field>
+        <field name="name">Niboo Homepage</field>
+        <field name="view_id" ref="theme_niboo.homepage"/>
+    </record>
+</odoo>
