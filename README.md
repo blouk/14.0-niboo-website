@@ -11,6 +11,9 @@ https://www.odoo.com/documentation/master/reference/javascript_reference.html
 -- Qweb languag réf.
 https://www.odoo.com/documentation/13.0/reference/qweb.html
 
+-- Owl
+https://odoo.github.io/owl/
+
 -- Odoo theming
 https://www.odoo.com/documentation/14.0/howtos/themes.html
 
