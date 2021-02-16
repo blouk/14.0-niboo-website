@@ -1,5 +1,6 @@
 from odoo import http, fields
 from odoo.http import request
+import json
 
 
 class Website(http.Controller):
@@ -15,3 +16,19 @@ class Website(http.Controller):
         if "message" in post:
             message = post["message"]
         return request.render("theme_niboo.message", {"message": message})
+
+
+    @http.route(
+        ["""/get/partners"""],
+        type="json",
+        auth="public",
+        website=True,
+    )
+    def get_partners(self):
+
+        Partner = request.env['res.partner']
+        partners = Partner.sudo().search([])
+        values = []
+        for partner in partners:
+            values.append({'name':partner.name,'id':partner.id})
+        return json.dumps(values)

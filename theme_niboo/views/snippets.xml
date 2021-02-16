@@ -8,6 +8,10 @@
           <t t-snippet="theme_niboo.s_banner" t-thumbnail="/theme_niboo/static/src/img/snippets/s_3d_banner.svg">
             <keywords>3d Banner</keywords>
           </t>
+          <t t-snippet="theme_niboo.s_dyn">
+            <keywords>Dynamic Snippet</keywords>
+          </t>
+
         </div>
       </div>
     </xpath>

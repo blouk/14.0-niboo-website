@@ -33,6 +33,5 @@
     <xpath expr="//script[last()]" position="after">
       <script type="text/javascript" src="/theme_niboo/static/src/js/snippet.editor.js"/>
     </xpath>
-
   </template>
 </odoo>

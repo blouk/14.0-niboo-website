@@ -22,6 +22,7 @@
         # Snippets
         "views/snippets.xml",
         "views/pages/snippets/s_3d_banner.xml",
+        "views/pages/snippets/s_dynamic_snippet.xml",
         "views/pages/homepage.xml",
 
     ],

@@ -11,6 +11,9 @@ https://www.odoo.com/documentation/master/reference/javascript_reference.html
 -- Qweb languag réf.
 https://www.odoo.com/documentation/13.0/reference/qweb.html
 
+-- Odoo theming
+https://www.odoo.com/documentation/14.0/howtos/themes.html
+
 -- Testing runbot odoo
 https://runbot.odoo.com/ (login/password : admin/admin)
 
